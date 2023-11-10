@@ -1,4 +1,5 @@
 # text2pdf
+A simple text to pdf converter written in Java. Specify how you want the text to be formatted using commands such as bold, large, indent etc and the program will output a pdf file with the text formatted accordingly.
 
 ## Running
 The following is a maven project and so maven needs to be installed on the local machine.
@@ -15,6 +16,6 @@ The working of the program -
 - If the line starts with a period, it is assumed that the line is a command, and so our existing hashmap of commands(which has been pre-fed with the default commands) is checked to see if the command exists. If it does, the command is set to true/given a value in the case of an indent, otherwise an error is thrown.
 - We can think of the commands as flags that are set to True if we want to manipulate the text using them or false if not. And so our text buffer is accordingly manipulated and added to a paragraph buffer. The text buffer is then cleared and the process continues.
 - If we come across a paragraph break or if the fill command is updated, we add the paragraph buffer to the document and clear the paragraph buffer.
-Once the entire file has been read, we add the remaining text to the paragraph buffer which we add to the final document, which in turn is finally closed.
+- Once the entire file has been read, we add the remaining text to the paragraph buffer which we add to the final document, which in turn is finally closed.
 
-- The program is written in such a way that it can be extended to add more commands. All that needs to be done is to add the command to the hashmap and add the corresponding functionality to the program.
+The program is written in such a way that it can be extended to add more commands. All that needs to be done is to add the command to the hashmap and add the corresponding functionality to the program.
