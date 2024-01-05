@@ -6,7 +6,7 @@ The following is a maven project and so maven needs to be installed on the local
 To run the project you can build it using maven and run accordingly. I primarily used vscode during my development process and so it should ideally be able to run using the same.
 The project does need to be provided an argument, which is the text file to be inputted containing the required test.
 To do so, we can add a configuration in the launch.json file under the .vscode directory. This can be the absolute path of the file or relative to the current directory(“../input.txt” for example). The same can be done using IntelliJ as well.
-Additionally, another command line argument can also be provided if we want to specify the name and location of the outputted pdf file, however, if this argument is not provided, the program will run just fine and simply use the same name and location as the input file.
+Additionally, another command line argument can also be provided if we want to specify the name and location of the outputted pdf file, however, if this argument is not provided, the program will simply use the same name and location as the input file.
 
 ## Working
 The working of the program -
